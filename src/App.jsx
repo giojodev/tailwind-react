@@ -1,16 +1,13 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
+
+import Bubble from './components/icons/Bubble';
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <>
-      <div class="chat-notification">
+      <div class="flex max-w-sm mx-auto my-0 p-6 rounded-lg bg-white shadow-xl text-black">
         <div class="chat-notification-logo-wrapper">
-          <img class="chat-notification-logo" src="../src/assets/ringing.png" alt="ChitChat Logo"/>
+          <Bubble/>
         </div>
         <div class="chat-notification-content">
           <h4 class="chat-notification-title">ChitChat</h4>
@@ -18,7 +15,7 @@ function App() {
         </div>
       </div>
 
-    </>
+
   )
 }
 
